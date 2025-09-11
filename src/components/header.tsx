@@ -68,12 +68,8 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full bg-background p-0">
-              <SheetHeader className="p-4 border-b flex flex-row justify-between items-center">
+              <SheetHeader className="p-4 border-b">
                 <Logo />
-                <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
-                  <X className="h-6 w-6" />
-                  <span className="sr-only">Fechar menu</span>
-                </Button>
               </SheetHeader>
               <SheetTitle className="sr-only">Menu Principal</SheetTitle>
               <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
@@ -89,7 +85,7 @@ export function Header() {
                       {link.label}
                     </Link>
                   ))}
-                   <Button asChild size="lg" className="mt-4 w-full">
+                   <Button asChild size="lg" className="mt-4 w-full mx-4">
                         <Link href={whatsappLink} onClick={() => setMobileMenuOpen(false)} target="_blank" rel="noopener noreferrer">Solicitar Orçamento</Link>
                     </Button>
                 </nav>
