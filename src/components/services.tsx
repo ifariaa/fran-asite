@@ -1,4 +1,4 @@
-import { Sofa, Armchair, Car, ShieldCheck } from 'lucide-react';
+import { Sofa, Armchair, ShieldCheck } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -12,11 +12,6 @@ const services = [
     icon: <Armchair className="h-10 w-10 text-primary" />,
     title: 'Limpeza de Poltronas',
     description: 'Cuidado especializado para suas poltronas, garantindo limpeza profunda e conservação do tecido.',
-  },
-  {
-    icon: <Car className="h-10 w-10 text-primary" />,
-    title: 'Higienização Automotiva',
-    description: 'Limpeza detalhada dos bancos e interior do seu carro, trazendo conforto e bem-estar.',
   },
   {
     icon: <ShieldCheck className="h-10 w-10 text-primary" />,
@@ -35,7 +30,7 @@ export function Services() {
             Oferecemos soluções completas para a limpeza e cuidado dos seus estofados.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <Card key={service.title} className="flex flex-col text-center items-center p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <CardHeader className="p-0">
