@@ -67,28 +67,32 @@ export function Header() {
                 <span className="sr-only">Abrir menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full bg-background p-0">
+            <SheetContent side="right" className="w-full bg-background p-0 flex flex-col">
                <SheetHeader className="p-4 border-b">
                  <Logo />
                  <SheetTitle className="sr-only">Menu Principal</SheetTitle>
                  <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
                </SheetHeader>
-              <div className="flex flex-col h-full p-4">
-                <nav className="flex flex-col items-center justify-center flex-1 gap-8">
+              <div className="flex flex-col h-full justify-center p-4">
+                <nav className="flex flex-col items-center justify-center gap-6 text-center">
                   {navLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="text-xl font-medium text-foreground/80 transition-colors hover:text-primary"
-                    >
-                      {link.label}
-                    </Link>
+                    <SheetClose asChild key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="text-xl font-medium text-foreground/80 transition-colors hover:text-primary"
+                      >
+                        {link.label}
+                      </Link>
+                    </SheetClose>
                   ))}
-                   <Button asChild size="lg" className="mt-4 w-full mx-4">
-                        <Link href={whatsappLink} onClick={() => setMobileMenuOpen(false)} target="_blank" rel="noopener noreferrer">Solicitar Orçamento</Link>
-                    </Button>
                 </nav>
+              </div>
+              <div className="p-4 mt-auto border-t">
+                <SheetClose asChild>
+                  <Button asChild size="lg" className="w-full">
+                      <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">Solicitar Orçamento</Link>
+                  </Button>
+                </SheetClose>
               </div>
             </SheetContent>
           </Sheet>
