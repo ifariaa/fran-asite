@@ -39,11 +39,11 @@ export function Contact() {
                                     <span className="text-muted-foreground">Rua Fictícia, 123 - São Paulo, SP</span>
                                 </div>
                             </div>
-                             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                             <a href="https://www.instagram.com/francahigieniza/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                                 <div className="bg-primary/10 p-3 rounded-md"><Instagram className="h-6 w-6 text-primary" /></div>
                                 <div>
                                     <span className="font-semibold">Instagram</span><br/>
-                                    <span className="text-muted-foreground group-hover:text-primary transition-colors">@franca_higenizacao</span>
+                                    <span className="text-muted-foreground group-hover:text-primary transition-colors">@francahigieniza</span>
                                 </div>
                             </a>
                         </div>

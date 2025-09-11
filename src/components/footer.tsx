@@ -49,7 +49,7 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Siga-nos</h3>
              <div className="flex space-x-4">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                <a href="https://www.instagram.com/francahigieniza/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                     <Instagram className="h-6 w-6" />
                     <span className="sr-only">Instagram</span>
                 </a>
