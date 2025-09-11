@@ -17,6 +17,9 @@ const navLinks = [
   { href: '#contato', label: 'Contato' },
 ];
 
+const whatsappLink = "https://wa.me/5511913971760?text=Olá,%20vi%20seu%20site%20de%20higienização%20de%20estofados%20e%20quero%20solicitar%20um%20orçamento.";
+
+
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -53,7 +56,7 @@ export function Header() {
         </nav>
         <div className="hidden md:flex items-center gap-2">
             <Button asChild>
-                <Link href="#contato">Solicitar Orçamento</Link>
+                <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">Solicitar Orçamento</Link>
             </Button>
         </div>
         <div className="md:hidden">
@@ -87,7 +90,7 @@ export function Header() {
                     </Link>
                   ))}
                    <Button asChild size="lg" className="mt-4">
-                        <Link href="#contato" onClick={() => setMobileMenuOpen(false)}>Solicitar Orçamento</Link>
+                        <Link href={whatsappLink} onClick={() => setMobileMenuOpen(false)} target="_blank" rel="noopener noreferrer">Solicitar Orçamento</Link>
                     </Button>
                 </nav>
               </div>
