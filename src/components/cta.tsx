@@ -14,8 +14,8 @@ export function Cta() {
         <p className="mt-4 text-base md:text-lg max-w-2xl mx-auto text-primary-foreground/80">
           Clique no botão abaixo e fale conosco diretamente pelo WhatsApp para um orçamento rápido e sem compromisso.
         </p>
-        <div className="mt-8">
-          <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100">
+        <div className="mt-8 px-4 sm:px-0">
+          <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100 w-full md:w-auto">
             <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-5 w-5" />
               Fale Conosco no WhatsApp

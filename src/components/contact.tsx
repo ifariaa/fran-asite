@@ -56,7 +56,7 @@ export function Contact() {
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <Button asChild className="w-full">
+                            <Button asChild className="w-full" size="lg">
                                 <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
                                 <Send className="mr-2 h-4 w-4" />
                                 Enviar para o WhatsApp

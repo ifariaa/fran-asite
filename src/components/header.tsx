@@ -77,7 +77,7 @@ export function Header() {
               </SheetHeader>
               <SheetTitle className="sr-only">Menu Principal</SheetTitle>
               <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
-              <div className="flex flex-col h-full">
+              <div className="flex flex-col h-full p-4">
                 <nav className="flex flex-col items-center justify-center flex-1 gap-8">
                   {navLinks.map((link) => (
                     <Link
@@ -89,7 +89,7 @@ export function Header() {
                       {link.label}
                     </Link>
                   ))}
-                   <Button asChild size="lg" className="mt-4">
+                   <Button asChild size="lg" className="mt-4 w-full">
                         <Link href={whatsappLink} onClick={() => setMobileMenuOpen(false)} target="_blank" rel="noopener noreferrer">Solicitar Orçamento</Link>
                     </Button>
                 </nav>

@@ -9,7 +9,7 @@ export function Hero() {
   const whatsappLink = "https://wa.me/5511913971760?text=Olá,%20vi%20seu%20site%20de%20higienização%20de%20estofados%20e%20quero%20solicitar%20um%20orçamento.";
 
   return (
-    <section id="inicio" className="relative h-screen min-h-[500px] w-full flex items-center justify-center md:h-[90vh] md:min-h-[600px]">
+    <section id="inicio" className="relative h-screen min-h-[600px] w-full flex items-center justify-center md:h-[90vh] md:min-h-[600px]">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -31,7 +31,7 @@ export function Hero() {
               Higienização completa de sofás, poltronas e estofados com tecnologia profissional.
             </p>
             <div className="mt-8">
-              <Button asChild size="lg" className="group">
+              <Button asChild size="lg" className="group w-full md:w-auto">
                 <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
                   Agendar agora pelo WhatsApp
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
