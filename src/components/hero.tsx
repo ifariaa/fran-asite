@@ -8,7 +8,7 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-sofa');
 
   return (
-    <section id="inicio" className="relative h-[90vh] min-h-[600px] w-full flex items-center justify-center">
+    <section id="inicio" className="relative h-screen min-h-[500px] w-full flex items-center justify-center md:h-[90vh] md:min-h-[600px]">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -23,10 +23,10 @@ export function Hero() {
       <div className="relative z-10 flex h-full items-center justify-center text-center">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-headline font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-headline font-bold text-white sm:text-5xl md:text-6xl">
               Seu estofado novo de novo!
             </h1>
-            <p className="mt-4 text-lg text-gray-200 md:text-xl">
+            <p className="mt-4 text-base text-gray-200 md:text-xl">
               Higienização completa de sofás, poltronas e estofados com tecnologia profissional.
             </p>
             <div className="mt-8">

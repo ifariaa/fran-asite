@@ -40,11 +40,11 @@ function StarRating({ rating }: { rating: number }) {
 
 export function Testimonials() {
   return (
-    <section id="depoimentos" className="py-20 lg:py-32">
+    <section id="depoimentos" className="py-16 md:py-20 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 px-4">
           <h2 className="text-3xl font-headline font-bold md:text-4xl">O que nossos clientes dizem</h2>
-          <p className="mt-3 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-3 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             Confiança e qualidade que se refletem em cada avaliação.
           </p>
         </div>
@@ -53,11 +53,11 @@ export function Testimonials() {
             align: 'start',
             loop: true,
           }}
-          className="w-full max-w-4xl mx-auto"
+          className="w-full max-w-sm sm:max-w-4xl mx-auto"
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-2">
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2">
+              <CarouselItem key={index} className="pl-4 md:basis-1/2">
                 <div className="p-1 h-full">
                   <Card className="h-full">
                     <CardContent className="flex flex-col items-start gap-4 p-6 text-left h-full">

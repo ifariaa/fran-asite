@@ -5,11 +5,11 @@ import { MessageCircle } from 'lucide-react';
 export function Cta() {
   return (
     <section className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 md:px-6 py-20 lg:py-24 text-center">
-        <h2 className="text-3xl font-headline font-bold md:text-4xl lg:text-5xl">
+      <div className="container mx-auto px-4 md:px-6 py-16 md:py-20 lg:py-24 text-center">
+        <h2 className="text-2xl font-headline font-bold md:text-4xl lg:text-5xl">
           Agende sua higienização agora e veja seu estofado como novo!
         </h2>
-        <p className="mt-4 text-lg max-w-2xl mx-auto text-primary-foreground/80">
+        <p className="mt-4 text-base md:text-lg max-w-2xl mx-auto text-primary-foreground/80">
           Clique no botão abaixo e fale conosco diretamente pelo WhatsApp para um orçamento rápido e sem compromisso.
         </p>
         <div className="mt-8">
