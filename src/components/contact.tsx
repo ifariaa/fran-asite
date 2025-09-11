@@ -36,7 +36,7 @@ export function Contact() {
                                 <div className="bg-primary/10 p-3 rounded-md"><Instagram className="h-6 w-6 text-primary" /></div>
                                 <div>
                                     <span className="font-semibold">Instagram</span><br/>
-                                    <span className="text-muted-foreground group-hover:text-primary transition-colors">@franca_clean</span>
+                                    <span className="text-muted-foreground group-hover:text-primary transition-colors">@franca_higenizacao</span>
                                 </div>
                             </a>
                         </div>

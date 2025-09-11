@@ -14,7 +14,7 @@ export function Logo({ className }: { className?: string }) {
       <div className="rounded-md bg-primary p-2">
         <Sparkles className="h-5 w-5 text-primary-foreground" />
       </div>
-      <span className="font-headline">França Clean</span>
+      <span className="font-headline">França Higenização</span>
     </Link>
   );
 }

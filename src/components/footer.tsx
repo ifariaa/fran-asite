@@ -18,7 +18,7 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-4 text-sm text-muted-foreground">
-              Seu estofado novo de novo. © {new Date().getFullYear()} França Clean.
+              Seu estofado novo de novo. © {new Date().getFullYear()} França Higenização.
             </p>
           </div>
           <div>

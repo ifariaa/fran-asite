@@ -10,9 +10,9 @@ export function About() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid gap-12 md:grid-cols-2 md:items-center">
                     <div className="order-2 md:order-1">
-                        <h2 className="text-3xl font-headline font-bold md:text-4xl">Sobre a França Clean</h2>
+                        <h2 className="text-3xl font-headline font-bold md:text-4xl">Sobre a França Higenização</h2>
                         <p className="mt-4 text-base md:text-lg text-muted-foreground">
-                            Nascemos da paixão por limpeza e do desejo de transformar ambientes. Na França Limpeza e Higienização, combinamos tecnologia de ponta e uma equipe dedicada para revitalizar seus estofados, garantindo não apenas beleza, mas também saúde e bem-estar para sua família.
+                            Nascemos da paixão por limpeza e do desejo de transformar ambientes. Na França Higenização, combinamos tecnologia de ponta e uma equipe dedicada para revitalizar seus estofados, garantindo não apenas beleza, mas também saúde e bem-estar para sua família.
                         </p>
                         <p className="mt-4 text-base md:text-lg text-muted-foreground">
                             Nosso compromisso é com a sua total satisfação. Por isso, cada serviço é executado com o máximo de cuidado, profissionalismo e atenção aos detalhes.

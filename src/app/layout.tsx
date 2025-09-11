@@ -4,9 +4,9 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'França Clean | Higienização Profissional de Estofados',
+  title: 'França Higenização | Higienização Profissional de Estofados',
   description: 'Especialistas em higienização de sofás, poltronas e estofados. Tecnologia profissional para deixar seu estofado novo de novo. Solicite um orçamento!',
-  keywords: 'higienização de sofás, limpeza de estofados, impermeabilização de estofados, França Limpeza e Higienização',
+  keywords: 'higienização de sofás, limpeza de estofados, impermeabilização de estofados, França Higenização',
 };
 
 export default function RootLayout({
