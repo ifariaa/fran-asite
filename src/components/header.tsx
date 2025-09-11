@@ -37,7 +37,9 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Logo />
+        <div className="flex-shrink-0">
+          <Logo />
+        </div>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
@@ -63,15 +65,15 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full bg-background p-0">
-                <SheetHeader className="p-4 border-b flex-row justify-between items-center">
-                   <Logo />
-                   <SheetTitle className="sr-only">Menu</SheetTitle>
-                   <SheetDescription className="sr-only">Navegação principal do site</SheetDescription>
-                    <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
-                        <X className="h-6 w-6" />
-                        <span className="sr-only">Fechar menu</span>
-                    </Button>
-                </SheetHeader>
+              <SheetHeader className="p-4 border-b flex flex-row justify-between items-center">
+                <Logo />
+                <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
+                  <X className="h-6 w-6" />
+                  <span className="sr-only">Fechar menu</span>
+                </Button>
+              </SheetHeader>
+              <SheetTitle className="sr-only">Menu Principal</SheetTitle>
+              <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
               <div className="flex flex-col h-full">
                 <nav className="flex flex-col items-center justify-center flex-1 gap-8">
                   {navLinks.map((link) => (

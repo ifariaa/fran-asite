@@ -1,4 +1,4 @@
-import { Sparkles } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
@@ -11,10 +11,14 @@ export function Logo({ className }: { className?: string }) {
         className
       )}
     >
-      <div className="rounded-md bg-primary p-2">
-        <Sparkles className="h-5 w-5 text-primary-foreground" />
-      </div>
-      <span className="font-headline">França Higenização</span>
+      <Image 
+        src="/logo.png" 
+        alt="França Higienização Logo" 
+        width={180} 
+        height={50} 
+        className="object-contain"
+        priority
+      />
     </Link>
   );
 }
