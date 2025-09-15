@@ -36,7 +36,7 @@ export function Contact() {
                                 <div className="bg-primary/10 p-3 rounded-md"><MapPin className="h-6 w-6 text-primary" /></div>
                                 <div>
                                     <span className="font-semibold">Endereço</span><br/>
-                                    <span className="text-muted-foreground">Rua Fictícia, 123 - São Paulo, SP</span>
+                                    <span className="text-muted-foreground">São Paulo e região</span>
                                 </div>
                             </div>
                              <a href="https://www.instagram.com/francahigieniza/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
