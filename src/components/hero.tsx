@@ -1,25 +1,20 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight } from 'lucide-react';
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-sofa');
   const whatsappLink = "https://wa.me/5511913971760?text=Olá,%20vi%20seu%20site%20de%20higienização%20de%20estofados%20e%20quero%20solicitar%20um%20orçamento.";
 
   return (
-    <section id="inicio" className="relative h-screen min-h-[600px] w-full flex items-center justify-center md:h-[90vh] md:min-h-[600px]">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
+    <section id="inicio" className="relative h-screen min-h-[600px] w-full flex items-center justify-center overflow-hidden md:h-[90vh] md:min-h-[600px]">
+      <video
+        src="https://i.imgur.com/hIT9KGH.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover"
+      />
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 flex h-full items-center justify-center text-center">
         <div className="container mx-auto px-4 md:px-6">
