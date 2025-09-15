@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section id="inicio" className="relative h-screen min-h-[600px] w-full flex items-center justify-center overflow-hidden md:h-[90vh] md:min-h-[600px]">
       <video
-        src="https://i.imgur.com/hIT9KGH.mp4"
+        src="https://i.imgur.com/ORxHcJL.mp4"
         autoPlay
         loop
         muted
