@@ -12,7 +12,7 @@ export function Logo({ className }: { className?: string }) {
       )}
     >
       <Image 
-        src="https://i.imgur.com/6cG4fLA.png" 
+        src="https://placehold.co/180x50/1E3A5F/FFFFFF?text=França+Higienização" 
         alt="França Higienização Logo" 
         width={180} 
         height={50} 
