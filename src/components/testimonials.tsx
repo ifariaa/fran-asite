@@ -64,12 +64,10 @@ export function Testimonials() {
                         <StarRating rating={testimonial.rating} />
                         <p className="text-muted-foreground italic flex-grow">"{testimonial.quote}"</p>
                         <div className="flex items-center gap-4 mt-2">
-                           {testimonial.image && (
                             <Avatar>
-                                <AvatarImage src={testimonial.image.imageUrl} alt={testimonial.name} data-ai-hint={testimonial.image.imageHint}/>
+                                {testimonial.image && <AvatarImage src={testimonial.image.imageUrl} alt={testimonial.name} data-ai-hint={testimonial.image.imageHint}/>}
                                 <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                             </Avatar>
-                           )}
                            <div>
                                <p className="font-semibold">{testimonial.name}</p>
                            </div>
