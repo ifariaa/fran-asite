@@ -7,7 +7,6 @@ const footerLinks = [
   { href: '#sobre', label: 'Sobre Nós' },
   { href: '#depoimentos', label: 'Depoimentos' },
   { href: '#contato', label: 'Contato' },
-  { href: '#', label: 'Política de Privacidade' },
 ];
 
 export function Footer() {

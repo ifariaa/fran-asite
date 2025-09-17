@@ -1,6 +1,5 @@
 import { Sofa, Armchair, ShieldCheck } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
 const services = [
   {
@@ -40,7 +39,6 @@ export function Services() {
               <CardContent className="p-0 mt-4 flex-grow">
                 <p className="text-muted-foreground">{service.description}</p>
               </CardContent>
-              <Button variant="link" className="mt-4">Saiba Mais</Button>
             </Card>
           ))}
         </div>
