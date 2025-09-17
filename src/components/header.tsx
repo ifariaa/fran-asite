@@ -13,7 +13,6 @@ const navLinks = [
   { href: '#servicos', label: 'Serviços' },
   { href: '#sobre', label: 'Sobre Nós' },
   { href: '#depoimentos', label: 'Depoimentos' },
-  { href: '#faq', label: 'Dúvidas' },
   { href: '#contato', label: 'Contato' },
 ];
 
@@ -36,7 +35,7 @@ export function Header() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled ? 'bg-background shadow-md backdrop-blur-sm' : 'bg-transparent'
+        isScrolled ? 'bg-background shadow-md' : 'bg-transparent'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
