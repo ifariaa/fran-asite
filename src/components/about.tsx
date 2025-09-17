@@ -40,7 +40,7 @@ export function About() {
                     </div>
                     <div className="order-1 md:order-2">
                         <Image
-                            src="https://i.imgur.com/uE6RV4y.jpg"
+                            src="https://i.imgur.com/HTXVeLR.png"
                             alt="Equipe de limpeza profissional em ação"
                             width={600}
                             height={400}
