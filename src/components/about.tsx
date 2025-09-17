@@ -1,10 +1,7 @@
 import Image from 'next/image';
 import { Award, Users, Smile } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function About() {
-    const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-team');
-
     return (
         <section id="sobre" className="py-16 md:py-20 lg:py-32">
             <div className="container mx-auto px-4 md:px-6">
@@ -42,16 +39,14 @@ export function About() {
                         </div>
                     </div>
                     <div className="order-1 md:order-2">
-                        {aboutImage && (
-                            <Image
-                                src={aboutImage.imageUrl}
-                                alt={aboutImage.description}
-                                width={600}
-                                height={400}
-                                className="rounded-lg shadow-xl"
-                                data-ai-hint={aboutImage.imageHint}
-                            />
-                        )}
+                        <Image
+                            src="https://i.imgur.com/uE6RV4y.jpg"
+                            alt="Equipe de limpeza profissional em ação"
+                            width={600}
+                            height={400}
+                            className="rounded-lg shadow-xl"
+                            data-ai-hint="cleaning team work"
+                        />
                     </div>
                 </div>
             </div>

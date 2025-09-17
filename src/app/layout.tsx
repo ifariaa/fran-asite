@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   title: 'França Higenização | Higienização Profissional de Estofados',
   description: 'Especialistas em higienização de sofás, poltronas e estofados. Tecnologia profissional para deixar seu estofado novo de novo. Solicite um orçamento!',
   keywords: 'higienização de sofás, limpeza de estofados, impermeabilização de estofados, França Higenização',
+  openGraph: {
+    title: 'França Higenização | Higienização Profissional de Estofados',
+    description: 'Deixe seu estofado novo de novo com nossos especialistas!',
+    images: [
+      {
+        url: 'https://i.imgur.com/3PLkpdS.png',
+        width: 180,
+        height: 50,
+        alt: 'França Higienização Logo',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

@@ -1,26 +1,25 @@
 import { Star } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from 'next/image';
 
 const testimonials = [
   {
     name: 'Maria S.',
-    image: PlaceHolderImages.find((img) => img.id === 'testimonial-1'),
+    initial: 'MS',
     quote: 'Serviço impecável! Meu sofá parece que saiu da loja. A equipe foi super profissional e atenciosa. Recomendo de olhos fechados!',
     rating: 5,
   },
   {
     name: 'João P.',
-    image: PlaceHolderImages.find((img) => img.id === 'testimonial-2'),
+    initial: 'JP',
     quote: 'Contratei a impermeabilização e estou muito satisfeito. O resultado foi ótimo e o atendimento excelente. Valeu muito a pena!',
     rating: 5,
   },
   {
     name: 'Ana L.',
-    image: PlaceHolderImages.find((img) => img.id === 'testimonial-3'),
+    initial: 'AL',
     quote: 'Atendimento rápido e eficiente. Limparam os bancos do meu carro e ficou perfeito. Cheirinho de novo! Com certeza chamarei de novo.',
     rating: 5,
   },
@@ -66,8 +65,7 @@ export function Testimonials() {
                         <p className="text-muted-foreground italic flex-grow">"{testimonial.quote}"</p>
                         <div className="flex items-center gap-4 mt-2">
                             <Avatar>
-                                {testimonial.image && <AvatarImage src={testimonial.image.imageUrl} alt={testimonial.name} data-ai-hint={testimonial.image.imageHint}/>}
-                                <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                                <AvatarFallback>{testimonial.initial}</AvatarFallback>
                             </Avatar>
                            <div>
                                <p className="font-semibold">{testimonial.name}</p>
